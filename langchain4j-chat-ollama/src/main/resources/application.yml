@@ -1,0 +1,4 @@
+langchain4j:
+  ollama:
+    chat:
+      model: llama2
