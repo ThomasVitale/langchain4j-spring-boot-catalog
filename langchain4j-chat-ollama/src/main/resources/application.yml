@@ -2,3 +2,5 @@ langchain4j:
   ollama:
     chat:
       model: llama2
+      options:
+        temperature: 0.7
