@@ -1,0 +1,13 @@
+services:
+  chroma:
+    image: ghcr.io/chroma-core/chroma
+    ports:
+      - '8000'
+    environment:
+      ANONYMIZED_TELEMETRY: False
+#  ollama:
+#    image: ghcr.io/thomasvitale/ollama-llama2
+#    ports:
+#      - '11434'
+#    labels:
+#      org.springframework.boot.service-connection: ollama

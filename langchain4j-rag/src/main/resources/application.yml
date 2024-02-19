@@ -1,0 +1,14 @@
+langchain4j:
+  ollama:
+    client:
+      log-requests: true
+      log-responses: true
+    chat:
+      model: llama2
+      options:
+        temperature: 0.7
+    embedding:
+      model: llama2
+  vectorstore:
+    chroma:
+      collection-name: MyCollection
