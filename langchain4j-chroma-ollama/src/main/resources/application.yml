@@ -1,4 +1,0 @@
-langchain4j:
-  ollama:
-    embedding:
-      model: llama2

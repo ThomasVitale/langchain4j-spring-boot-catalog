@@ -1,4 +1,7 @@
 langchain4j:
   ollama:
+    client:
+      log-requests: true
+      log-responses: true
     embedding:
       model: llama2

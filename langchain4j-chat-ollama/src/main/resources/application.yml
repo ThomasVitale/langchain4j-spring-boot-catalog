@@ -1,5 +1,8 @@
 langchain4j:
   ollama:
+    client:
+      log-requests: true
+      log-responses: true
     chat:
       model: llama2
       options:
