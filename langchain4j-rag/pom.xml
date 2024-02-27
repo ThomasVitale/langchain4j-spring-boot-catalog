@@ -15,7 +15,8 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
-		<langchain4j.spring.version>0.6.1</langchain4j.spring.version>
+		<langchain4j.spring.version>0.7.0</langchain4j.spring.version>
+		<testcontainers.version>1.19.6</testcontainers.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -32,13 +33,13 @@
 			<artifactId>langchain4j-chroma-spring-boot-starter</artifactId>
 			<version>${langchain4j.spring.version}</version>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>io.thomasvitale.langchain4j</groupId>
 			<artifactId>langchain4j-spring-boot-docker-compose</artifactId>
 			<version>${langchain4j.spring.version}</version>
 			<scope>runtime</scope>
 			<optional>true</optional>
-		</dependency>
+		</dependency> -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -49,6 +50,11 @@
 			<groupId>io.thomasvitale.langchain4j</groupId>
 			<artifactId>langchain4j-spring-boot-testcontainers</artifactId>
 			<version>${langchain4j.spring.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.testcontainers</groupId>
+			<artifactId>chromadb</artifactId>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
