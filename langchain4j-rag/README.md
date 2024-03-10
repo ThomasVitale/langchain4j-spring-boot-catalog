@@ -1,6 +1,6 @@
-# Simple RAG: Chroma and Ollama
+# Simple RAG: Ollama and Weavite
 
-Simple RAG with LLMs via Ollama and Chroma vector store.
+Simple RAG with LLMs via Ollama and Weaviate vector store.
 
 ## Running the application
 
@@ -61,7 +61,7 @@ Finally, run the Spring Boot application.
 ## Calling the application
 
 You can now call the application that will use Ollama and _llama2_ to generate a vector representation (embeddings)
-of your question, perform a similarity search on Chroma, and then answer based on the retrieved contextual information.
+of your question, perform a similarity search on Weaviate, and then answer based on the retrieved contextual information.
 This example uses [httpie](https://httpie.io) to send HTTP requests.
 
 ```shell

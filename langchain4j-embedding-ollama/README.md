@@ -64,11 +64,11 @@ You can now call the application that will use Ollama and _llama2_ to generate a
 This example uses [httpie](https://httpie.io) to send HTTP requests.
 
 ```shell
-http :8080/ai/embed
+http :8080/embed
 ```
 
 Try passing your custom prompt and check the result.
 
 ```shell
-http :8080/ai/embed message=="The capital of Italy is Rome"
+http :8080/embed message=="The capital of Italy is Rome"
 ```

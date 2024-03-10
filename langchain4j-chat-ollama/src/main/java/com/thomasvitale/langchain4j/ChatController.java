@@ -14,7 +14,7 @@ class ChatController {
         this.chatLanguageModel = chatLanguageModel;
     }
 
-    @GetMapping("/ai/chat")
+    @GetMapping("/chat")
     String chat(@RequestParam(defaultValue = "What did Gandalf say to the Balrog?") String message) {
         return chatLanguageModel.generate(message);
     }

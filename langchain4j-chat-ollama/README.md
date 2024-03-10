@@ -64,11 +64,11 @@ You can now call the application that will use Ollama and llama2 to generate tex
 This example uses [httpie](https://httpie.io) to send HTTP requests.
 
 ```shell
-http :8080/ai/chat
+http :8080/chat
 ```
 
 Try passing your custom prompt and check the result.
 
 ```shell
-http :8080/ai/chat message=="What is the capital of Italy?"
+http :8080/chat message=="What is the capital of Italy?"
 ```
