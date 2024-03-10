@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.boot.testcontainers.service.connection.ServiceConnection;
 import org.springframework.context.annotation.Bean;
-import org.testcontainers.chromadb.ChromaDBContainer;
-
-import io.thomasvitale.langchain4j.testcontainers.service.containers.OllamaContainer;
+import org.testcontainers.ollama.OllamaContainer;
+import org.testcontainers.utility.DockerImageName;
+import org.testcontainers.weaviate.WeaviateContainer;
 
 @TestConfiguration(proxyBeanMethods = false)
 public class TestApplication {
@@ -14,13 +14,14 @@ public class TestApplication {
     @Bean
     @ServiceConnection
     OllamaContainer ollama() {
-        return new OllamaContainer("ghcr.io/thomasvitale/ollama-llama2");
+        return new OllamaContainer(DockerImageName.parse("ghcr.io/thomasvitale/ollama-llama2")
+                .asCompatibleSubstituteFor("ollama/ollama"));
     }
 
     @Bean
     @ServiceConnection
-    ChromaDBContainer chroma() {
-        return new ChromaDBContainer("ghcr.io/chroma-core/chroma:0.4.22");
+    WeaviateContainer weaviate() {
+        return new WeaviateContainer("semitechnologies/weaviate:1.24.1");
     }
 
     public static void main(String[] args) {
