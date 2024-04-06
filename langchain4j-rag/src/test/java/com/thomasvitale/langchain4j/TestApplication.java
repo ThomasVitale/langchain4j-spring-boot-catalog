@@ -21,7 +21,7 @@ public class TestApplication {
     @Bean
     @ServiceConnection
     WeaviateContainer weaviate() {
-        return new WeaviateContainer("semitechnologies/weaviate:1.24.1");
+        return new WeaviateContainer("semitechnologies/weaviate:1.24.7");
     }
 
     public static void main(String[] args) {
