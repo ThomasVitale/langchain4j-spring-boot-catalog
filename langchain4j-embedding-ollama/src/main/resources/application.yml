@@ -4,4 +4,4 @@ langchain4j:
       log-requests: true
       log-responses: true
     embedding:
-      model: llama2
+      model: llama3

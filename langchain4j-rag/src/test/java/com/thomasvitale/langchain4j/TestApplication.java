@@ -14,7 +14,7 @@ public class TestApplication {
     @Bean
     @ServiceConnection
     OllamaContainer ollama() {
-        return new OllamaContainer(DockerImageName.parse("ghcr.io/thomasvitale/ollama-llama2")
+        return new OllamaContainer(DockerImageName.parse("ghcr.io/thomasvitale/ollama-llama3")
                 .asCompatibleSubstituteFor("ollama/ollama"));
     }
 

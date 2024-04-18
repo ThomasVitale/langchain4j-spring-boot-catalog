@@ -11,7 +11,7 @@ at startup time.
 ### When using Ollama as a dev service with Testcontainers
 
 The application relies on the native Testcontainers support in Spring Boot to spin up an Ollama service
-with the _llama2_ model at startup time.
+with the _llama3_ model at startup time.
 
 ```shell
 ./mvnw spring-boot:test-run
@@ -22,7 +22,7 @@ Notice that the first time you run this command, it will take a while to downloa
 ### When using Ollama as a dev service with Docker Compose
 
 The application can optionally rely on the native Docker Compose support in Spring Boot to spin up
-an Ollama service with the _llama2_ model at startup time. To enable that, uncomment this dependency
+an Ollama service with the _llama3_ model at startup time. To enable that, uncomment this dependency
 in the `pom.xml` file.
 
 ```xml
@@ -46,10 +46,10 @@ Notice that the first time you run this command, it will take a while to downloa
 ### When using Ollama as a native application
 
 First, make sure you have [Ollama](https://ollama.ai) installed on your laptop.
-Then, use Ollama to run the _llama2_ large language model.
+Then, use Ollama to run the _llama3_ large language model.
 
 ```shell
-ollama run llama2
+ollama run llama3
 ```
 
 Finally, run the Spring Boot application.
@@ -60,7 +60,7 @@ Finally, run the Spring Boot application.
 
 ## Calling the application
 
-You can now call the application that will use Ollama and llama2 to generate text based on a default prompt.
+You can now call the application that will use Ollama and llama3 to generate text based on a default prompt.
 This example uses [httpie](https://httpie.io) to send HTTP requests.
 
 ```shell
