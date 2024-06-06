@@ -1,6 +1,6 @@
 services:
   ollama:
-    image: 'ghcr.io/thomasvitale/ollama-llama3'
+    image: 'ghcr.io/thomasvitale/ollama-mistral'
     ports:
       - '11434'
     labels:

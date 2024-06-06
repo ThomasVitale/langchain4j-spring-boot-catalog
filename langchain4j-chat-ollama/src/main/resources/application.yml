@@ -4,6 +4,6 @@ langchain4j:
       log-requests: true
       log-responses: true
     chat:
-      model: llama3
+      model: mistral
       options:
         temperature: 0.7
